@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a sample car detailing appointment.">
+  <title>Booking | Elite Auto Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Elite Auto Studio home">
+      <span class="brand-mark"><span>E</span></span>
+      <span><span class="brand-name">ELITE AUTO</span><span class="brand-tag">DETAILING STUDIO</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li><li><a href="packages.html">Packages</a></li>
+      <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+      <li><a class="btn btn--small" href="booking.html">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<main><section class="page-hero"><div class="container"><span class="eyebrow">Let's get started</span><h1>Book your <span class="gold">appointment.</span></h1><p>Share a few details about your vehicle and the service you're interested in.</p></div></section>
+<section class="section"><div class="container"><div class="form-wrap">
+<form id="booking-form">
+<div class="form-grid">
+<div class="form-group"><label for="name">Full name *</label><input id="name" name="name" type="text" placeholder="Your name" required minlength="2"></div>
+<div class="form-group"><label for="phone">Mobile number *</label><input id="phone" name="phone" type="tel" placeholder="10-digit mobile number" pattern="[0-9+ -]{10,15}" required></div>
+<div class="form-group"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+<div class="form-group"><label for="car">Car brand and model *</label><input id="car" name="car" type="text" placeholder="e.g. Hyundai Creta" required></div>
+<div class="form-group"><label for="service">Select service *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Ceramic coating</option><option>Interior detailing</option><option>Paint correction</option><option>Paint protection film</option><option>Exterior detailing</option><option>Premium car wash</option></select></div>
+<div class="form-group"><label for="package">Select package</label><select id="package" name="package"><option value="">Choose a package</option><option>Essential</option><option>Premium</option><option>Ultimate</option><option>Not sure yet</option></select></div>
+<div class="form-group"><label for="date">Preferred date *</label><input id="date" name="date" type="date" required></div>
+<div class="form-group"><label for="time">Preferred time *</label><select id="time" name="time" required><option value="">Choose a time</option><option>9:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>3:00 PM</option><option>5:00 PM</option></select></div>
+<div class="form-group full"><label for="notes">Additional requirements</label><textarea id="notes" name="notes" placeholder="Tell us about your vehicle or any specific requirements..."></textarea></div>
+<div class="form-group full"><button class="btn" type="submit">Submit appointment request ↗</button><p id="booking-message" class="form-message" role="status"></p><small style="color:var(--muted)">Portfolio demo: this form does not send or store your information and does not create a real booking.</small></div>
+</div></form>
+</div></div></section></main>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="brand" href="index.html"><span class="brand-mark"><span>E</span></span><span><span class="brand-name">ELITE AUTO</span><span class="brand-tag">DETAILING STUDIO</span></span></a>
+        <p style="margin-top:18px">Care, craftsmanship and attention to detail for drivers who love their cars.</p>
+      </div>
+      <div class="footer-col"><h3>Explore</h3><a href="about.html">About us</a><a href="services.html">Services</a><a href="packages.html">Packages</a><a href="gallery.html">Our work</a></div>
+      <div class="footer-col"><h3>Our services</h3><a href="services.html">Ceramic coating</a><a href="services.html">Interior detailing</a><a href="services.html">Paint correction</a><a href="services.html">Paint protection film</a></div>
+      <div class="footer-col"><h3>Get in touch</h3><p>Hyderabad, Telangana<br>+91 90000 00000<br>hello@eliteautostudio.example</p><a href="booking.html">Request an appointment →</a><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Elite Auto Studio. Portfolio demonstration.</span><span>Designed with precision. Built with care.</span></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+<script src="js/booking.js"></script>
+</body>
+</html>
